@@ -4,15 +4,141 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/backfround_black">
+
+    <ImageView
+        android:id="@+id/imv_logo"
+        android:layout_width="303dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_carro_de_la_compra" />
 
     <TextView
+        android:id="@+id/tv_tittle1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="78dp"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto"
+        android:text="Ato"
+        android:textColor="@color/primary_green"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imv_logo"
+        app:layout_constraintTop_toBottomOf="@+id/imv_logo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginRight="78dp"
+        android:fontFamily="@font/roboto"
+        android:text="Store"
+        android:textColor="@color/secondary_grey"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imv_logo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_tittle1"
+        app:layout_constraintTop_toBottomOf="@+id/imv_logo" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/roboto"
+        android:text="Correo Electrónico:"
+        android:textColor="@color/secondary_grey"
+        app:layout_constraintStart_toStartOf="@+id/imv_logo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tittle1" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/secondary_dark_grey"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/secondary_grey"
+        android:textColorHint="@color/secondary_grey"
+        android:textColorLink="@color/secondary_grey"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/imv_logo"
+        app:layout_constraintStart_toStartOf="@+id/imv_logo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="Contraseña:"
+        android:textColor="@color/secondary_grey"
+        app:layout_constraintStart_toStartOf="@+id/tv_email"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/secondary_dark_grey"
+        android:textColor="@color/secondary_grey"
+        android:textColorHint="@color/secondary_grey"
+        android:textColorLink="@color/secondary_grey"
+        app:layout_constraintEnd_toEndOf="@+id/edt_email"
+        app:layout_constraintStart_toStartOf="@+id/edt_email"
+        app:layout_constraintTop_toBottomOf="@+id/tv_password" />
+
+    <Button
+        android:id="@+id/btn_ingresar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="Ingresar"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/edt_password"
+        app:layout_constraintStart_toStartOf="@+id/edt_password"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+
+    <TextView
+        android:id="@+id/tv_tittle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="@font/roboto"
+        android:text="¿Eres nuevo?"
+        android:textColor="@color/secondary_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ingresar" />
+
+    <TextView
+        android:id="@+id/tv_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/roboto"
+        android:text="Regístrate"
+        android:textColor="@color/primary_green"
+        app:layout_constraintStart_toEndOf="@+id/tv_tittle3"
+        app:layout_constraintTop_toTopOf="@+id/tv_tittle3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
