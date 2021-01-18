@@ -1,8 +1,10 @@
-package com.islasoft.atstore;
+package com.islasoft.atstore.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.islasoft.atstore.R;
 
 public class MainActivity extends AppCompatActivity {
 

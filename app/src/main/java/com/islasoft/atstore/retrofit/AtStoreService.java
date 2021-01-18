@@ -1,9 +1,9 @@
 package com.islasoft.atstore.retrofit;
 
-import com.islasoft.atstore.RequestLogin;
-import com.islasoft.atstore.RequestSignup;
-import com.islasoft.atstore.ResponseLogin;
-import com.islasoft.atstore.ResponseSignup;
+import com.islasoft.atstore.retrofit.request.RequestLogin;
+import com.islasoft.atstore.retrofit.request.RequestSignup;
+import com.islasoft.atstore.retrofit.response.ResponseLogin;
+import com.islasoft.atstore.retrofit.response.ResponseSignup;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
